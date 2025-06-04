@@ -1,0 +1,11 @@
+import jmcomic
+option = jmcomic.create_option_by_file('option. yml’)
+jm_number=input(535583：’)
+jmcomic.download_album(jm_number, option)
+import os, shutil
+folder =’base_dir’
+for filename in os.listdir(folder):
+file_path = os. path. join(folder, filename)try:
+if os.path. isdir(file path):shutil.rmtree(file_path)
+except Exception as e:
+print('Failed to delete directory')
